@@ -7,8 +7,8 @@ all: hello.efi
 	lld-link /subsystem:efi_application /entry:EfiMain /out:$@ $<
 
 .PHONY: run
-run: hello.efi
-	$(HOME)/osbook/devenv/run_qemu.sh $<
+run: 
+	$(HOME)/osbook/devenv/run_qemu.sh $(HOME)/edk2/Build/MikanLoaderX64/DEBUG_CLANG38/X64/Loader.efi
 
 clean:
 	rm -f hello.efi
