@@ -1,0 +1,8 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+Language: C
+AlignConsecutiveDeclarations: false
+AlignAfterOpenBracket: AlwaysBreak
+BinPackArguments: false
+BinPackParameters: false
+AllowShortCaseLabelsOnASingleLine: true
